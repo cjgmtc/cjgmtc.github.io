@@ -1,0 +1,525 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.background{
+	/* background-color: black; */
+	background: linear-gradient(rgba(0,0,0,.7), rgba(15, 15, 15, 0.7)), url("img/bg-1.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 700px;
+    padding-top: 10px;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+button {
+	font-family: 'Poppins', sans-serif;
+}
+
+.hr-style {
+	background-color: #9595b3;
+}
+
+.gradient-style {
+	font-family: 'Poppins', sans-serif;
+	background: linear-gradient(to right, #ffffff, #b4b4cc);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 2%;
+}
+
+header {
+	display: flex;
+	width: 90%;
+	height: 15vh;
+	margin: auto;
+	align-items: center;
+}
+
+.logo-container,
+.nav-links,
+.cart {
+	display: flex;
+}
+
+.nav-links a:hover {
+	color: orange;
+  }
+
+.logo-container {
+	flex: 1;
+}
+.logo {
+	font-weight: 400;
+	margin: 5px;
+}
+nav {
+	flex: 2;
+}
+
+.nav-links {
+	justify-content: space-around;
+	list-style: none;
+}
+.nav-link {
+	margin-top: 18px;
+	color:#9595b3;
+	font-size: 18px;
+	text-decoration: none;
+}
+.cart {
+	flex: 1;
+	justify-content: flex-end;
+}
+
+.presentation {
+	display: flex;
+	width: 90%;
+	margin: auto;
+	height: 68vh;
+	align-items: center;
+}
+
+.presentation2 {
+	display: flex;
+	width: 90%;
+	margin: auto;
+	height: 68vh;
+	align-items: center;
+	height: 150%;
+}
+.introduction {
+	flex: 1;
+}
+.intro-text h1 {
+	font-size: 44px;
+	font-weight: 500;
+	background: linear-gradient(to right, #ffffff, #6f6f89);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.intro-text p {
+	margin-top: 5px;
+	font-size: 22px;
+	color: #9595b3;
+}
+
+.cover {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 66vh;
+	margin-top: 2vh;
+}
+.cover img {
+	height: 100%;
+	filter: drop-shadow(0px 5px 3px black);
+	animation: drop 1.5s ease;
+}
+
+.big-circle {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+	opacity: 0.5;
+	height: 80%;
+}
+.medium-circle {
+	position: absolute;
+	top: 30%;
+	right: 30%;
+	z-index: -1;
+	height: 60%;
+	opacity: 0.4;
+}
+.small-circle {
+	position: absolute;
+	bottom: 0%;
+	left: 20%;
+	z-index: -1;
+}
+
+.about-us {
+	width: 30%; text-align: justify; margin: auto; font-family: 'Poppins', sans-serif; background: linear-gradient(to right, #ffffff, #b4b4cc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 2%;
+}
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+#technologies > hr {
+	background-color: #9595b3;
+}
+
+/* Testimonial Section */  
+  .testimonial-image {  
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* height: 100%; */
+	width: 30%;
+	margin-bottom: 5px;
+  }
+
+  .Client{
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	padding-top: 2%;
+	padding-bottom: 1.5%;
+	background: linear-gradient(to right, #ffffff, #6f6f89);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+
+  .testimonial-image {
+	height: 150px;
+	width: 330px;
+}
+
+  .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-left: 35%;
+	height: 100%;
+	width: 30%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: black;
+  }
+  
+  .container:hover .overlay {
+	opacity: 0.85;
+  }
+  
+  .text {
+	font-family: 'Poppins', sans-serif;
+	color: #ffffff;
+	font-size: 18px;
+	position: absolute;
+	width: 120%;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+  }
+
+/* Footer Section */
+#footer {
+	font-family: 'Poppins', sans-serif;
+	margin: auto;
+	text-align: center;
+	color: #9595b3;
+}
+
+#banner-4 {
+	margin-left: 0; width: 100%; height: 140%;
+}
+  
+#technologies {
+	background-color: black;
+	text-align: center;
+  }
+  
+.technologies-logo {
+	width: 100%;
+	margin: 20px 20px 50px;
+}
+
+#technologies h1 {
+	font-family: 'Poppins', sans-serif;
+	padding-top: 2%;
+	padding-bottom: 1.5%;
+	background: linear-gradient(to right, #ffffff, #b4b4cc);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.h1-design{
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	padding-top: 2%;
+	padding-bottom: 5%;
+	background: linear-gradient(to right, #ffffff, #b4b4cc);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.image-container {
+	margin: 50px;
+	display: inline-flex;
+	justify-content: space-around;
+    position: relative;
+    width: 150px;
+    height: 220px;
+}
+
+.image-container-2 {
+	margin: 50px;
+	display: inline-flex;
+	justify-content: space-around;
+    position: relative;
+    width: 200px;
+}
+
+.image-container .after {
+	word-wrap: break-word;
+	font-size: 20px;
+	padding-top: 85px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color:  #9595b3;
+}
+.image-container:hover .after {
+    display: block;
+	background: rgba(0, 0, 0, .8);
+}
+
+medium {
+	text-align: right;
+	background: linear-gradient(to right, #ffffff, #acacb8);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: 'Poppins', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+  }
+
+.presentation0 {
+	display: flex;
+	width: 90%;
+	margin: auto;
+	height: 68vh;
+	align-items: center;
+}
+
+@media screen and (max-width: 1600px) {
+	
+	#banner-1 {
+		margin-top: 1%;
+		height: 95%;
+	} 
+
+	.overlay {
+		margin-left: 32%;
+		width: 36%;
+	}
+
+}
+
+@media screen and (max-width: 1400px) {
+	
+	.presentation {
+		margin-top: 160px;
+		height: 800px;
+	}
+	.presentation2 {
+		height: 1200px;
+	}
+
+	#technologies {
+		margin-bottom: 6%;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+		
+	.presentation0 {
+		margin: auto;
+	}
+	.presentation{
+		height: 700px;
+	}
+	.presentation2 {
+		margin-top: 30%;
+		height: 1000px;
+		margin-bottom: 20%;
+	}
+	.text {
+		width: 100%;
+	}
+	}
+
+@media screen and (max-width: 1028px) {
+	.intro-text h1 {
+		margin-top: 60px;
+		font-size: x-large;
+	}
+	.intro-text p {
+		font-size: medium;
+	}
+
+	.gray-logo{	
+		margin: auto;
+  		width: 100%;
+	}
+
+	.nav-links{
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: auto;
+  		width: 58%;
+	}
+
+	.presentation0 {
+		margin-top: 0px;
+		display: block;
+		height: auto;
+	}
+
+	.presentation {
+		margin-top: 110%;
+		display: block;
+		height: auto;
+	}
+
+	.presentation2 {
+		margin-top: 70%;
+		display: block;
+		height: auto;
+	}
+
+	.cover {
+		overflow: hidden;
+	}
+
+	#technologies > p {
+		width: 80%;
+	}
+
+	#technologies > img {
+		width: 80%;
+	}
+
+	video {
+		visibility: hidden;
+	}
+
+	.intro-text {
+		font-size: small;
+	}
+
+	#technologies > hr {
+		width: fit-content;
+	}
+
+  
+	#title {
+	  text-align: center;
+	}
+  
+	.title-image {
+	  position: static;
+	  transform: rotate(0);
+	}
+
+	#technologies span {
+		display: none;
+	}
+
+	.presentation {
+		overflow: auto;
+	}
+
+	.presentation0 {
+		margin-top: 80%;
+		display: block;
+		height: auto;
+	}
+
+	.h1-title {
+		padding-top: 0%;
+		padding-bottom: 0%;
+	}
+
+	.presentation {
+		margin:auto;
+		height: 200px;
+		/* margin-top: 120%; */
+	}
+
+	.testimonial-image {
+		height: 100px;
+		width: 250px;
+	}
+
+	.cover{
+		/* visibility: hidden; */
+		height: 600px;
+	}
+	.cover img {
+		/* visibility: hidden; */
+		height: 500px;
+	}
+
+	img {
+		margin: 0;
+		/* visibility: hidden; */
+		overflow: hidden;
+	}	
+		
+	.presentation {
+		overflow: hidden;
+		height: 1000px;
+	}
+	.presentation2{
+		overflow: hidden;
+		height: 1500px;
+		margin:auto;
+	}
+
+	.overlay {
+		margin-left: 32%;
+		width: 36%;
+	}
+
+	.container:hover .overlay {
+		word-wrap: break-word;
+		width: 75%;
+		position: absolute;
+		left: -97px;
+	}
+
+	#banner-3 {
+		width: 100%;
+		height: 80%;
+	}
+	
+	#banner-4 {
+		width: 100%;
+		height: 80%;
+	}
+
+	.technologies-logo {
+		height: 100%;
+		width: 100%;
+		margin: 0px;
+		padding 0px;
+	}
+}
